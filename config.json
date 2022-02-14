@@ -1,0 +1,12 @@
+{
+    "lang": {
+        "ZH": "ChineseSimplified",
+        "EN": "English"
+    },
+    "directory": "Languages",
+    "backup": "Backup",
+    "update": "ZH",
+    "with": "EN",
+    "commentSimilarity": 5,
+    "commentSimilarityWarn": 10
+}
