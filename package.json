@@ -1,0 +1,15 @@
+{
+    "type": "commonjs",
+    "dependencies": {
+        "leven": "^4.0.0",
+        "pkg": "^5.5.2",
+        "xml": "^1.0.1",
+        "xml2js": "^0.4.23"
+    },
+    "scripts": {
+        "build": "node_modules\\.bin\\pkg -t node14-win,node14-linux --out-path=dist index.js"
+    },
+    "bin": "index.js",
+    "name": "XmlUpdater",
+    "pkg": {}
+}
