@@ -49,7 +49,8 @@ This tool will also ignore the comment and won't remove it. Meanwhile, it will a
     "update": "ZH",
     "with": "EN",
     "commentSimilarity": 5,
-    "commentSimilarityWarn": 10
+    "commentSimilarityWarn": 10,
+    "ignorePreviousComment": false
 }
 ```
 
@@ -86,6 +87,10 @@ This config will use all xml files under `Languages/English` to update the corre
   If two translations' difference is lower than `commentSimilarity`, the tool generate warning; otherwise it generate error.
 
   > If in EN: `<X>abc</X>`, in ZH(corresponding node): `<!-- EN: def -->`, then it generates warning.
+
+* ignorePreviousComment
+  
+  This entry allows to ignore old refers and rewrite them.
 
 ## Running
 

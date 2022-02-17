@@ -181,7 +181,9 @@ async function update (from, to, bak) {
                             if (config.with in tn.comment.data) {
                                 const l = leven(fn.data, tn.comment.data[config.with])
                                 if (l > 0) {
-                                    if (l < config.commentSimilarity) {
+                                    if (config.ignorePreviousComment) {
+                                        tn.comment.data[config.with] = fn.data
+                                    } else if (l < config.commentSimilarity) {
                                         console.warn(`WARN: Similar translation refer for tag ${fn.tag} found. In ${fp} is ${fn.data}, but in ${tp} is ${tn.comment.data[config.with]}.`)
                                     } else {
                                         console.error(`FATAL: Mismatch translation refer for tag ${fn.tag} found. In ${fp} is ${fn.data}, but in ${tp} is ${tn.comment.data[config.with]}.`)

@@ -85,6 +85,10 @@
 
   > 如果在英文文件中有`<X>abc</X>`，在中文的对应标签处有`<!-- EN: def -->`，则会生成警告。
 
+* ignorePreviousComment
+  
+  这个选项会使工具无视旧的引用直接覆盖。
+
 ## 运行
 
 你可以直接下载发布版，修改`config.json`，然后运行`XmlUpdater.bat`（Windows用户）或`XmlUpdater`（Linux用户）。
